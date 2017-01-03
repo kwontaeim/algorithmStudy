@@ -1,4 +1,6 @@
-/*두 수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
+/*
+ 문제 1000
+ 두 수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
 
 입력
 첫째 줄에 A와 B가 주어진다. (0 < A,B < 10)
@@ -8,7 +10,7 @@
 */
 
 
-public class Test1000{
+public class Test1_2 {
   
 
   public static void main(String[] args) throws Exception {
