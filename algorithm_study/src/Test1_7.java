@@ -36,7 +36,7 @@ public class Test1_7 {
       }
     }
 
-
+    keyBoard.close();
   }
 
 }

@@ -16,6 +16,11 @@ public class Test1_3 {
    String[] num = keyScanner.nextLine().split(" ");
    
    System.out.println(Integer.parseInt(num[0]) - Integer.parseInt(num[1]));
+ 
+   keyScanner.close();
+ 
  }
+ 
+ 
 
 }
