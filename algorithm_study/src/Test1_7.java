@@ -10,33 +10,47 @@
 
 public class Test1_7 {
 
-  public static void main (String[] args) {
+  public static void main(String args[]) {
+
 
     java.util.Scanner keyBoard = new java.util.Scanner(System.in);
 
+    StringBuilder sb = new StringBuilder();
+    String line = null;
 
-    String[] outPut = new String[100];
-    String checkEmpty;
-
-    for (int i = 0; i < outPut.length; i++) {
-
-      checkEmpty = keyBoard.nextLine();
-
-      if (checkEmpty != "" && checkEmpty.length() <= 100) {
-        outPut[i] = checkEmpty;
-        continue;
-
-      } else {
-
-        for (int j = 0; j < i; j++) {
-
-          System.out.println(outPut[j].trim());
-        }
-
-      }
+    while (keyBoard.hasNext()) {
+    System.out.println(keyBoard.next());
     }
 
     keyBoard.close();
-  }
+    /*for (int i = 0; i < outPut.length; i++) {
 
+     if (keyBoard.hasNext() == true) {
+      checkEmpty = keyBoard.nextLine();
+      } else {
+        System.out.println();
+        checkEmpty = keyBoard.toString();
+      }
+      System.out.println(checkEmpty);
+
+      
+     if (checkEmpty == "" || checkEmpty.length() > 100 || !keyBoard.hasNextLine()) {
+        break;
+
+      } else {
+
+        outPut[i] = checkEmpty;
+
+      }
+    }
+  
+    keyBoard.close();
+    
+    for (int j = 0; j < outPut.length; j++) {
+      
+      System.out.println(outPut[j].trim());
+    }*/
+  }
 }
+
+
