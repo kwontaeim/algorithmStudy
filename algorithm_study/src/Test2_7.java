@@ -1,4 +1,5 @@
-/*문제 2839번 
+/*
+ 문제 2839번 
 상근이는 요즘 설탕공장에서 설탕을 배달하고 있다. 상근이는 지금 사탕가게에 설탕을 정확하게 N킬로그램을 배달해야 한다. 
 설탕공장에서 만드는 설탕은 봉지에 담겨져 있다. 봉지는 3킬로그램 봉지와 5킬로그램 봉지가 있다.
 
@@ -12,18 +13,39 @@
 첫째 줄에 N이 주어진다. (3 ≤ N ≤ 5000)
 
 출력
-상근이가 배달하는 봉지의 최소 개수를 출력한다. 만약, 정확하게 N킬로그램을 만들 수 없다면 -1을 출력한다.*/
+상근이가 배달하는 봉지의 최소 개수를 출력한다. 만약, 정확하게 N킬로그램을 만들 수 없다면 -1을 출력한다.
+ */
 
 public class Test2_7 {
 
   public static void main(String[] args) {
-    
+
     java.util.Scanner sc = new java.util.Scanner(System.in);
-    
-   
-    
-    
-    
+
+    int num = sc.nextInt();
+    int check = 0;
+    int count = 0;
+
+    for (int y = 0; y <= (num / 2); y++) {
+      if ((num - (2 * y)) % 3 == 0) {
+        check = (num - (2 * y)) / 3;
+
+        if (check > 0 && check >= y) {
+          count = check;
+        }
+      } 
+    }
+
+    System.out.println(count);
+
+
+
+
+    sc.close();
+
+
+
+
 
   }
 
