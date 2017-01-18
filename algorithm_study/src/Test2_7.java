@@ -36,6 +36,7 @@ public class Test2_7 {
       } 
     }
 
+    System.out.println("----------");
     System.out.println(count);
 
 
