@@ -1,4 +1,4 @@
 ## algorithm_study
 
-* cases : https://www.acmicpc.net/lectures
-* language : java
+* Cases : https://www.acmicpc.net/lectures
+* Language : java
